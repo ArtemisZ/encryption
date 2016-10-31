@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>密码测试</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sidebar">
+	<ul>
+		<li><a href="">凯撒加密</a></li>
+		<li><a href="">playfair加密</a></li>
+		<li><a href="">hill加密</a></li>
+	</ul>
+</div>
+	<div class="caeser">
+		<label>偏移量：<input type="number" class="caeser_num"/></label>
+		<label>输入字符串：<input type="text" class="caeser_text" value="pay more money"></label>
+		<button class="caeser_encrypt">加密</button>
+		<div class="caeser_show"></div>
+	</div>
+	<div class="playfair">
+		<label>输入单词：<input type="text" class="playfair_num" value="playfair"/></label>
+		<label>输入字符串：<input type="text" class="playfair_text" value="pay more money"></label>
+		<button class="playfair_encrypt">加密</button>
+		<div class="playfair_show"></div>
+	</div>
+	<div class="hill">
+		<!-- 这个是自动生成矩阵的，所以不用去好好地 -->
+		<label>输入字符串：<input type="text" class="hill_text" value="pay more money"></label>
+		<button class="hill_encrypt">加密</button>
+		<div class="hill_show"></div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
